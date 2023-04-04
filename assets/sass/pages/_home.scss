@@ -49,7 +49,7 @@
           outline: 1px groove rgb(173, 173, 173);
 
           &:focus {
-            outline: 2px groove rgb(233, 96, 5);
+            outline: 2px groove rgb(255, 81, 1);
           }
         }
       }
@@ -94,7 +94,7 @@
         outline: 1px groove rgb(173, 173, 173);
 
         &:focus {
-          outline: 2px groove rgb(233, 96, 5);
+          outline: 2px groove rgb(255, 136, 0);
         }
       }
 
@@ -197,7 +197,6 @@
 
     img {
       width: 100%;
-
       object-fit: contain;
     }
   }
@@ -209,7 +208,7 @@
     margin-bottom: 3rem;
 
     .address-items {
-      font-size: 2.5rem;
+      font-size: 2rem;
 
       > i {
         padding: 0 1rem;
@@ -242,5 +241,137 @@
     color: white;
     border-radius: 5px;
     background-color: rgb(255, 165, 113);
+  }
+}
+
+.wrap-location {
+  margin-bottom: 6.4rem;
+
+  .location {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 25rem);
+    gap: 1.5rem;
+
+    .location-items {
+      &:nth-child(1) {
+        position: relative;
+        grid-row: 1 / span 2;
+
+        &::after {
+          content: "Paris";
+          position: absolute;
+          bottom: 1rem;
+          left: 2rem;
+          color: white;
+          font-size: 3rem;
+          text-shadow: 2px 2px #ff8a8a;
+        }
+      }
+
+      &:nth-child(2) {
+        position: relative;
+        &::after {
+          content: "Japan";
+          position: absolute;
+          bottom: 1rem;
+          left: 2rem;
+          color: white;
+          font-size: 2.5rem;
+          text-shadow: 2px 2px #13a6fc;
+        }
+      }
+
+      &:nth-child(3) {
+        position: relative;
+        &::after {
+          content: "San Diago";
+          position: absolute;
+          bottom: 1rem;
+          left: 2rem;
+          color: white;
+          font-size: 2.5rem;
+          text-shadow: 2px 2px #2b2b2b;
+        }
+      }
+
+      &:nth-child(4) {
+        position: relative;
+        &::after {
+          content: "Cuba";
+          position: absolute;
+          bottom: 1rem;
+          left: 2rem;
+          color: white;
+          font-size: 2.5rem;
+          text-shadow: 2px 2px #ff0a68;
+        }
+      }
+
+      &:nth-child(5) {
+        position: relative;
+        &::after {
+          content: "Spain";
+          position: absolute;
+          bottom: 1rem;
+          left: 2rem;
+          color: white;
+          font-size: 2.5rem;
+          text-shadow: 2px 2px #ff9100;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.form-subscribe {
+  width: 153rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+
+  color: white;
+  background-color: black;
+  border-left: 0.5rem solid gray;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  > h2 {
+    margin: 2.6rem auto 1.5rem;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+  p:nth-of-type(2) {
+    margin-top: 1.5rem;
+  }
+
+  > input {
+    width: 100%;
+    padding: 0.8rem;
+  }
+  .form-subscribe-btn {
+    margin: 1.6rem auto;
+    padding: 1rem 1.6rem;
+
+    border: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(180, 180, 180);
+      color: black;
+    }
   }
 }

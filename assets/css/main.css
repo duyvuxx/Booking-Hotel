@@ -167,7 +167,7 @@ header a {
   outline: 1px groove rgb(173, 173, 173);
 }
 .wrap-name .booking-items-wrapper input:focus {
-  outline: 2px groove rgb(233, 96, 5);
+  outline: 2px groove rgb(255, 81, 1);
 }
 .wrap-name .booking-btn {
   margin-top: 0.5rem;
@@ -223,7 +223,7 @@ header a {
   outline: 1px groove rgb(173, 173, 173);
 }
 .wrap-rooms .form-checkin-wrap > input:focus {
-  outline: 2px groove rgb(233, 96, 5);
+  outline: 2px groove rgb(255, 136, 0);
 }
 .wrap-rooms .form-checkin-wrap:nth-child(1), .wrap-rooms .form-checkin-wrap:nth-child(2) {
   -webkit-box-flex: 2;
@@ -338,7 +338,7 @@ header a {
   margin-bottom: 3rem;
 }
 .wrap-about .address .address-items {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .wrap-about .address .address-items > i {
   padding: 0 1rem;
@@ -374,4 +374,119 @@ header a {
   color: white;
   border-radius: 5px;
   background-color: rgb(255, 165, 113);
+}
+
+.wrap-location {
+  margin-bottom: 6.4rem;
+}
+.wrap-location .location {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 25rem);
+  gap: 1.5rem;
+}
+.wrap-location .location .location-items:nth-child(1) {
+  position: relative;
+  grid-row: 1/span 2;
+}
+.wrap-location .location .location-items:nth-child(1)::after {
+  content: "Paris";
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px #ff8a8a;
+}
+.wrap-location .location .location-items:nth-child(2) {
+  position: relative;
+}
+.wrap-location .location .location-items:nth-child(2)::after {
+  content: "Japan";
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #13a6fc;
+}
+.wrap-location .location .location-items:nth-child(3) {
+  position: relative;
+}
+.wrap-location .location .location-items:nth-child(3)::after {
+  content: "San Diago";
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #2b2b2b;
+}
+.wrap-location .location .location-items:nth-child(4) {
+  position: relative;
+}
+.wrap-location .location .location-items:nth-child(4)::after {
+  content: "Cuba";
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #ff0a68;
+}
+.wrap-location .location .location-items:nth-child(5) {
+  position: relative;
+}
+.wrap-location .location .location-items:nth-child(5)::after {
+  content: "Spain";
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #ff9100;
+}
+.wrap-location .location .location-items img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.form-subscribe {
+  width: 153rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  color: white;
+  background-color: black;
+  border-left: 0.5rem solid gray;
+  opacity: 0.7;
+}
+.form-subscribe:hover {
+  opacity: 1;
+}
+.form-subscribe > h2 {
+  margin: 2.6rem auto 1.5rem;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+.form-subscribe p:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+.form-subscribe > input {
+  width: 100%;
+  padding: 0.8rem;
+}
+.form-subscribe .form-subscribe-btn {
+  margin: 1.6rem auto;
+  padding: 1rem 1.6rem;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+}
+.form-subscribe .form-subscribe-btn:hover {
+  cursor: pointer;
+  background-color: rgb(180, 180, 180);
+  color: black;
 }
