@@ -112,14 +112,28 @@
                   <label for="adults"
                     ><i class="fa-solid fa-people"></i> Adults</label
                   >
-                  <input id="adults" type="number" min="1" max="5" required />
+                  <input
+                    id="adults"
+                    type="number"
+                    min="1"
+                    max="5"
+                    placeholder="1"
+                    required
+                  />
                 </div>
 
                 <div class="booking-items-wrapper">
                   <label for="kid"
                     ><i class="fa-solid fa-child"></i> Kids</label
                   >
-                  <input id="kid" type="number" min="1" max="5" required />
+                  <input
+                    id="kid"
+                    type="number"
+                    min="1"
+                    max="5"
+                    placeholder="0"
+                    required
+                  />
                 </div>
               </div>
               <button class="booking-btn">
@@ -136,100 +150,122 @@
               Make yourself at home is our slogan. We offer the best beds in the
               industry. Sleep well and rest well.
             </p>
+
             <form id="form_checkin" class="form-checkin">
-              <label for=""
-                ><i class="fa-regular fa-calendar-week"></i> Check In</label
-              >
-              <input type="date" required />
-              <label for=""
-                ><i class="fa-regular fa-calendar-week"></i> Check Out</label
-              >
-              <input type="date" required />
-              <label for=""><i class="fa-solid fa-people"></i> Adults</label>
-              <input type="number" min="1" max="5" required />
-              <label for=""><i class="fa-solid fa-child"></i> Kids</label>
-              <input type="number" min="1" max="5" required />
-              <label for=""
-                ><i class="fa-solid fa-magnifying-glass"></i> Search</label
-              >
-              <button class="booking-btn">Search availability</button>
+              <div class="form-checkin-wrap">
+                <label for=""
+                  ><i class="fa-regular fa-calendar-week"></i> Check In</label
+                >
+                <input type="date" required />
+              </div>
+              <div class="form-checkin-wrap">
+                <label for=""
+                  ><i class="fa-regular fa-calendar-week"></i> Check Out</label
+                >
+                <input type="date" required />
+              </div>
+              <div class="form-checkin-wrap">
+                <label for=""><i class="fa-solid fa-people"></i> Adults</label>
+                <input type="number" min="1" max="5" placeholder="1" required />
+              </div>
+              <div class="form-checkin-wrap">
+                <label for=""><i class="fa-solid fa-child"></i> Kids</label>
+                <input type="number" min="1" max="5" placeholder="0" required />
+              </div>
+              <div class="form-checkin-wrap">
+                <label for=""
+                  ><i class="fa-solid fa-magnifying-glass"></i> Search</label
+                >
+                <button class="form-checkin-btn">Search</button>
+              </div>
             </form>
+
             <div class="room">
               <div class="room-items">
                 <div class="img-wrapper">
-                  <img src="" alt="" />
+                  <img src="./assets/imgs/single-room.jpg" alt="single" />
                 </div>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <p></p>
-                <div class="room-items-icon">
-                  <i class="fa-solid fa-shower"></i>
-                  <i class="fa-solid fa-phone"></i>
-                  <i class="fa-solid fa-wifi"></i>
+                <div class="room-items-wrap">
+                  <h3>Single Room</h3>
+                  <p>From $99</p>
+                  <p>Single bed</p>
+                  <p>15m<sup style="font-size: xx-small">2</sup></p>
+                  <div class="room-items-wrap-icon">
+                    <i class="fa-solid fa-shower"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                  </div>
+                  <button class="room-items-wrap-btn">Choose Room</button>
                 </div>
-                <button class="room-items-btn">Choose Room</button>
               </div>
               <div class="room-items">
                 <div class="img-wrapper">
-                  <img src="" alt="" />
+                  <img src="./assets/imgs/double-room.jpg" alt="double" />
                 </div>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <p></p>
-                <div class="room-items-icon">
-                  <i class="fa-solid fa-shower"></i>
-                  <i class="fa-solid fa-phone"></i>
-                  <i class="fa-solid fa-wifi"></i>
-                  <i class="fa-solid fa-tv"></i>
+                <div class="room-items-wrap">
+                  <h3>Double Room</h3>
+                  <p>From $149</p>
+                  <p>Queen-size bed</p>
+                  <p>25m<sup style="font-size: xx-small">2</sup></p>
+                  <div class="room-items-wrap-icon">
+                    <i class="fa-solid fa-shower"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                  </div>
+                  <button class="room-items-wrap-btn">Choose Room</button>
                 </div>
-                <button class="room-items-btn">Choose Room</button>
               </div>
               <div class="room-items">
                 <div class="img-wrapper">
-                  <img src="" alt="" />
+                  <img src="./assets/imgs/deluxe-room.jpg" alt="deluxe" />
                 </div>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <p></p>
-                <div class="room-items-icon">
-                  <i class="fa-solid fa-shower"></i>
-                  <i class="fa-solid fa-phone"></i>
-                  <i class="fa-solid fa-wifi"></i>
-                  <i class="fa-solid fa-tv"></i>
-                  <i class="fa-solid fa-plate-utensils"></i>
+                <div class="room-items-wrap">
+                  <h3>Deluxe Room</h3>
+                  <p>From $199</p>
+                  <p>King-size bed</p>
+                  <p>40m<sup style="font-size: xx-small">2</sup></p>
+                  <div class="room-items-wrap-icon">
+                    <i class="fa-solid fa-shower"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-plate-utensils"></i>
+                  </div>
+                  <button class="room-items-wrap-btn">Choose Room</button>
                 </div>
-                <button class="room-items-btn">Choose Room</button>
               </div>
             </div>
           </div>
 
           <div class="wrap-about">
-            <h2 class="title">About</h2>
-            <p class="desc">
-              Our hotel is one of a kind. It is truely amazing. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam.
-            </p>
-            <p class="desc-about">
-              We accept:
-              <i class="fa-brands fa-cc-mastercard"></i>
-              <i class="fa-brands fa-cc-visa"></i>
-              <i class="fa-brands fa-cc-paypal"></i>
-            </p>
-            <div class="map">
-              <img src="" alt="map" />
+            <div class="wrap-about-items">
+              <h2 class="title">About</h2>
+              <p class="desc">
+                Our hotel is one of a kind. It is truely amazing. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.
+              </p>
+              <p class="desc-about">
+                We accept:
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+              </p>
+            </div >
+            
+            <div class="wrap-about-items map">
+              <img src="./assets/imgs/map.jpg" alt="map" />
             </div>
-            <div class="address">
+
+            <div class="wrap-about-items address">
               <p class="address-items">
                 <i class="fa-solid fa-map-location"></i>
                 423 Some adr, Chicago, US
@@ -247,7 +283,7 @@
         </div>
 
         <div class="notice">
-          <span><!-- icon --></span>
+          <span><i class="fa-solid fa-info"></i></span>
           <span
             >On demand, we can offer playstation, babycall, children care, dog
             equipment, etc.</span
