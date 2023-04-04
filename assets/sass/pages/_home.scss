@@ -1,0 +1,71 @@
+.wrap-name {
+  max-width: 150rem;
+  height: auto;
+  margin: auto;
+
+  padding: 24.5rem 76.6rem 24.5rem 1.6rem;
+
+  background-color: rgb(185, 185, 185);
+  background-image: url("../../../assets/imgs/hotel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hotel-name {
+    min-width: 60rem;
+
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &-title {
+      padding: 1.6rem;
+      background-color: orangered;
+      color: white;
+    }
+  }
+
+  .booking {
+    padding: 1.6rem;
+
+    &-items {
+      @include dflex;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+
+      &-wrapper {
+        flex: 1;
+        @include dflex(start, center);
+        flex-direction: column;
+
+        input {
+          width: 100%;
+          height: 4rem;
+          padding: 0.8rem;
+
+          font-size: 1.7rem;
+          border-radius: 5px;
+          border: none;
+          outline: 1px groove rgb(173, 173, 173);
+
+          &:focus {
+            outline: 2px solid rgb(240, 156, 125);
+          }
+        }
+      }
+    }
+
+    &-btn {
+      padding: 0.8rem 1.6rem;
+      background-color: rgb(177, 177, 177);
+      border: none;
+
+      font-size: 1.7rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(100, 100, 100);
+        color: white;
+      }
+    }
+  }
+}

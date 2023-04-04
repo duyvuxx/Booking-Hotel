@@ -1,0 +1,17 @@
+html {
+    // 62.5% <=> 10px
+    font-size: 62.5%;
+    line-height: 1.4;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 1.6rem;
+  }
+
+  .wrapper {
+   max-width: 150rem;
+   margin: 0 auto;
+   padding: 0 1.6rem;
+  }
