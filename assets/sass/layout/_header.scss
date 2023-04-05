@@ -5,6 +5,7 @@ header {
   font-size: 1.8rem;
 
   box-shadow: 0 3px 8px 5px rgba(110, 110, 110, 0.164);
+
   a {
     display: inline-block;
     padding: 0 1.6rem;
@@ -12,6 +13,16 @@ header {
     line-height: 4.3rem;
 
     color: black;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    display: block;
+    height: auto;
+    text-align: center;
   }
 }
 
@@ -30,16 +41,19 @@ header {
         background-color: #cccccc;
       }
     }
-    
+
     &:nth-child(1) > a::after {
       content: " Perchuhi";
       padding: 0 1rem;
     }
-    
+
     &:nth-child(n):not(:nth-child(1)):hover a {
       background-color: #cccccc;
     }
+  }
 
+  @include mobile {
+    display: block;
   }
 }
 

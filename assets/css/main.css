@@ -130,6 +130,18 @@ header a {
   line-height: 4.3rem;
   color: black;
 }
+@media (max-width: 46.1875em) {
+  header a {
+    width: 100%;
+  }
+}
+@media (max-width: 46.1875em) {
+  header {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+}
 
 .nav-left {
   display: -webkit-box;
@@ -157,6 +169,11 @@ header a {
 .nav-left-items:nth-child(n):not(:nth-child(1)):hover a {
   background-color: #cccccc;
 }
+@media (max-width: 46.1875em) {
+  .nav-left {
+    display: block;
+  }
+}
 
 .nav-right a {
   color: black;
@@ -172,7 +189,6 @@ main {
 
 .wrap-name {
   max-width: 150rem;
-  height: auto;
   margin: auto;
   padding: 24.5rem 76.6rem 24.5rem 1.6rem;
   background-color: rgb(185, 185, 185);
@@ -191,6 +207,11 @@ main {
   padding: 1.6rem;
   background-color: orangered;
   color: white;
+}
+@media (max-width: 46.1875em) {
+  .wrap-name .hotel-name {
+    min-width: 20rem;
+  }
 }
 .wrap-name .booking {
   padding: 1.6rem;
@@ -239,6 +260,11 @@ main {
 .wrap-name .booking-items-wrapper input:focus {
   outline: 2px groove rgb(255, 81, 1);
 }
+@media (max-width: 46.1875em) {
+  .wrap-name .booking-items {
+    display: block;
+  }
+}
 .wrap-name .booking-btn {
   margin-top: 0.5rem;
   padding: 0.8rem 1.6rem;
@@ -251,6 +277,11 @@ main {
   cursor: pointer;
   background-color: rgb(100, 100, 100);
   color: white;
+}
+@media (max-width: 46.1875em) {
+  .wrap-name {
+    padding: 5rem 2rem;
+  }
 }
 
 .wrap-rooms .form-checkin {
@@ -300,6 +331,11 @@ main {
       -ms-flex: 2;
           flex: 2;
 }
+@media (max-width: 46.1875em) {
+  .wrap-rooms .form-checkin-wrap {
+    margin-bottom: 1rem;
+  }
+}
 .wrap-rooms .form-checkin-btn {
   width: 100%;
   height: 4rem;
@@ -312,6 +348,11 @@ main {
   cursor: pointer;
   color: black;
   background-color: rgb(185, 185, 185);
+}
+@media (max-width: 46.1875em) {
+  .wrap-rooms .form-checkin {
+    display: block;
+  }
 }
 .wrap-rooms .room {
   display: -webkit-box;
@@ -379,6 +420,20 @@ main {
   background-color: rgb(124, 124, 124);
   color: black;
 }
+@media (max-width: 46.1875em) {
+  .wrap-rooms .room-items {
+    width: 100%;
+    max-height: 80rem;
+  }
+}
+@media (max-width: 46.1875em) {
+  .wrap-rooms .room {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .wrap-about {
   display: grid;
@@ -413,6 +468,22 @@ main {
 .wrap-about .address .address-items > i {
   padding: 0 1rem;
   color: orangered;
+}
+@media (max-width: 46.1875em) {
+  .wrap-about .address {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .wrap-about {
+    display: block;
+  }
+}
+@media (max-width: 46.1875em) {
+  .wrap-about {
+    display: block;
+  }
 }
 
 .notice {
@@ -521,6 +592,18 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 46.1875em) {
+  .wrap-location .location .location-items {
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 46.1875em) {
+  .wrap-location .location {
+    display: block;
+  }
 }
 
 .form-subscribe {

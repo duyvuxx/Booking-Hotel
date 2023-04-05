@@ -4,7 +4,6 @@ main {
 
 .wrap-name {
   max-width: 150rem;
-  height: auto;
   margin: auto;
 
   padding: 24.5rem 76.6rem 24.5rem 1.6rem;
@@ -26,6 +25,10 @@ main {
       padding: 1.6rem;
       background-color: orangered;
       color: white;
+    }
+
+    @include mobile {
+      min-width: 20rem;
     }
   }
 
@@ -58,6 +61,10 @@ main {
           }
         }
       }
+
+      @include mobile {
+        display: block;
+      }
     }
 
     &-btn {
@@ -75,6 +82,10 @@ main {
         color: white;
       }
     }
+  }
+
+  @include mobile {
+    padding: 5rem 2rem;
   }
 }
 
@@ -107,6 +118,10 @@ main {
       &:nth-child(2) {
         flex: 2;
       }
+
+      @include mobile {
+        margin-bottom: 1rem;
+      }
     }
 
     &-btn {
@@ -123,6 +138,10 @@ main {
         color: black;
         background-color: rgb(185, 185, 185);
       }
+    }
+
+    @include mobile {
+      display: block;
     }
   }
 
@@ -183,6 +202,15 @@ main {
           color: black;
         }
       }
+
+      @include mobile {
+        width: 100%;
+        max-height: 80rem;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
     }
   }
 }
@@ -220,6 +248,19 @@ main {
         color: orangered;
       }
     }
+
+    @include mobile {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    display: block;
   }
 }
 
@@ -332,6 +373,16 @@ main {
 
         object-fit: cover;
       }
+
+      @include mobile {
+        margin-bottom: 1.5rem;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+    }
+
+    @include mobile {
+      display: block;
     }
   }
 }
