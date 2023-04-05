@@ -5,36 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking</title>
-
-    <!-- bootstrap 5 -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-      defer
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-      defer
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-      defer
-    ></script> -->
-
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -54,17 +24,17 @@
             </a>
           </li>
           <li class="nav-left-items">
-            <a href="#">Rooms</a>
+            <a href="#idroom">Rooms</a>
           </li>
           <li class="nav-left-items">
-            <a href="#">About</a>
+            <a href="#idabout">About</a>
           </li>
           <li class="nav-left-items">
-            <a href="#">Contact</a>
+            <a href="#idcontact">Contact</a>
           </li>
         </ul>
         <div class="nav-right">
-          <a href="#">Book Now</a>
+          <a href="#idcontact">Book Now</a>
         </div>
       </header>
 
@@ -74,7 +44,7 @@
             <div class="hotel-name-title">
               <h1>
                 <i class="fa-solid fa-bed"></i>
-                Hotel Name
+                Vasile Hotel
               </h1>
             </div>
 
@@ -143,7 +113,7 @@
           </div>
         </div>
 
-        <div class="wrapper">
+        <div id="idroom" class="wrapper">
           <div class="wrap-rooms">
             <h2 class="title">Rooms</h2>
             <p class="desc">
@@ -238,20 +208,20 @@
             </div>
           </div>
 
-          <div class="wrap-about">
+          <div id="idabout" class="wrap-about">
             <div class="wrap-about-items">
               <h2 class="title">About</h2>
               <p class="desc">
                 Our hotel is one of a kind. It is truely amazing. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                officia deserunt mollit anim id est laborum consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam.
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
               <p class="desc-about">
                 We accept:
@@ -259,8 +229,8 @@
                 <i class="fa-brands fa-cc-visa"></i>
                 <i class="fa-brands fa-cc-paypal"></i>
               </p>
-            </div >
-            
+            </div>
+
             <div class="wrap-about-items map">
               <img src="./assets/imgs/map.jpg" alt="map" />
             </div>
@@ -318,31 +288,81 @@
           <h2>Get the best offers first!</h2>
           <p>Join our newsletter.</p>
           <p>E-mail</p>
-          <input type="email" placeholder="mail@gmail.com"/>
+          <input type="email" placeholder="mail@gmail.com" />
           <button class="form-subscribe-btn">Subscribe</button>
         </form>
 
-        <div class="wrapper">
+        <div id="idcontact" class="wrapper">
           <div class="wrap-contact">
             <h2 class="title">Contact</h2>
             <p class="desc">
               If you have any questions, do not hesitate to ask them.
             </p>
             <div class="contact-address">
-              <p class="contact-address-items"><!-- icon -->Chicago, US</p>
               <p class="contact-address-items">
-                <!-- icon -->Phone: +00 151515
+                <i class="fa-solid fa-map-location"></i> Chicago, US
               </p>
               <p class="contact-address-items">
-                <!-- icon -->Email: mail@mail.com
+                <i class="fa-solid fa-phone-volume"></i> Phone: +00 151515
+              </p>
+              <p class="contact-address-items">
+                <i class="fa-solid fa-envelope"></i> Email: mail@mail.com
               </p>
             </div>
-            <form id="form_send" class="form-send"></form>
+            <form id="form_send" class="form-send">
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="text" placeholder="Message" />
+              <button class="form-send-btn">Send Message</button>
+            </form>
           </div>
         </div>
       </main>
 
-      <footer></footer>
+      <footer>
+        <h3>Where to find Me:</h3>
+        <ul class="social">
+          <li class="social-items">
+            <a href="#" target="_blank" rel="noopener no-referrer">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social-items">
+            <a
+              href="https://github.com/duyvuxx"
+              target="_blank"
+              rel="noopener no-referrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="social-items">
+            <a href="#" target="_blank" rel="noopener no-referrer">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </li>
+          <li class="social-items">
+            <a href="#" target="_blank" rel="noopener no-referrer">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-items">
+            <a href="#" target="_blank" rel="noopener no-referrer">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <span>Copyright</span>
+          <a
+            href="https://github.com/duyvuxx"
+            target="_blank"
+            rel="noopener no-referrer"
+          >
+            <b>DUY VU</b>
+          </a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -1,0 +1,24 @@
+@mixin dflex ($alignItems:center, $justifyContent:center) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+  }
+  
+  // Responsive 
+  @mixin tablet_and_mobile {
+    @media (max-width: $tablet-max-w) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: $tablet-min-w) and (max-width: $tablet-max-w) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: $mobile-width) {
+      @content;
+    }
+  }
