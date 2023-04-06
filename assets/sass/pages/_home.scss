@@ -37,7 +37,7 @@ main {
     &-items {
       @include dflex;
       gap: 2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
 
       &-wrapper {
         flex: 1;
@@ -48,6 +48,7 @@ main {
         input {
           width: 100%;
           height: 4rem;
+          margin-bottom: 0.8rem;
           padding: 0.8rem;
 
           font-size: 1.7rem;
@@ -287,6 +288,11 @@ main {
     border-radius: 5px;
     background-color: rgb(255, 165, 113);
   }
+
+  @include mobile {
+    width: 100%;
+    text-align: justify;
+  }
 }
 
 .wrap-location {
@@ -428,6 +434,11 @@ main {
       background-color: rgb(180, 180, 180);
       color: black;
     }
+  }
+
+  @include mobile {
+    width: 100%;
+    text-align: justify;
   }
 }
 
