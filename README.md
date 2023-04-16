@@ -9,5 +9,5 @@ In this project I build a website to perform booking hotel and review detail roo
 
 #### 🐳 Author: [Duy Vu](https://github.com/duyvuxx)
 
-##### ⏰ Created at 7-04-2023
+##### ⏰ Created at 07-04-2023
 
